@@ -1,0 +1,10 @@
+openai
+pyyaml
+pandas
+wordcloud
+matplotlib
+statsmodels
+openpyxl
+trueskill
+scipy
+seaborn

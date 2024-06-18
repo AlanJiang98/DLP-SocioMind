@@ -1,0 +1,149 @@
+f_spatial_memory: "./assets/sociomind/spatial_map.json"
+f_associate_memory: None
+persona_table: "./assets/sociomind/ipip_table.xlsx"
+persona_database: "./assets/sociomind/persona_database.npy"
+Arial_path: "./assets/sociomind/Arial.ttf"
+
+verbose: False
+application_type: "AI society"
+mode: 'event-driven'
+
+plot_length: 5
+max_topic_cache: 10
+max_topic_proposals: 6
+max_used_topic_retrieval: 8
+
+max_plot_retention: 8
+retention_perception: 5
+emotion_update_rounds: 3
+max_round_per_plot: 6
+max_topic_per_plot: 2
+
+context_retention: 12
+max_retrieve_events: 2
+max_retrieve_thoughts: 2
+max_persona_retrieval: 6
+max_per_persona_retrieval: 2
+
+speech_max_length: 35
+expression_max_length: 4
+motion_max_length: 6
+place_max_length: 3
+
+plot_id: 0
+round: 0
+
+
+characters_info: {
+  "Cowherd": {
+    "personality": {
+      "description": "Cowherd is a diligent, simple, filial, loyal and persevering farmer.",
+      "openness": ,
+      "conscientiousness": ,
+      "extraversion": ,
+      "agreeableness": ,
+      "neuroticism": ,
+    },
+    "emotion": {
+      "description": "neutral",
+      "pleasure": ,
+      "arousal": ,
+      "dominance": ,
+    },
+    "motivation": {
+      "long_term": "Pursue and protect love, love family.",
+      "short_term": "Pursuing the love of Weaver Girl.",
+    },
+    "core_self": {
+      "central_belief": ["True love can overcome all difficulties, including separation between heaven and man. Family is the most important part of his life.",],    
+      "features": [
+      "At a very young age, Cowherd lost his parents, making him an orphan.",
+      "Cowherd was forced to live with his brothers and sisters, but his brothers and sisters-in-law were not kind and often abused him.",
+      "When the Cowherd needed help the most, an old cow (a reincarnated immortal) came to him and became his friend and guide.",
+    ],
+    },
+
+    "relationships": {
+      "Weaver Girl": {
+        "attitude": "Love at first sight, love from the heart.",
+        "description": "The Cowherd fell in love at first sight when he met the Weaver Girl for the first time.",
+        "trust": 5,
+        "intimacy": 7,
+        "supportiveness": 7,
+      }
+    },
+  },
+
+  "Weaver Girl": 
+  {
+    "personality": {
+      "description": "Weaver Girl is a fairy in heaven, with otherworldly beauty and innocence, loyal to her feelings and full of courage.",
+      "openness": ,
+      "conscientiousness": ,
+      "extraversion": ,
+      "agreeableness": ,
+      "neuroticism": ,
+    },
+    "emotion": {
+      "description": "Neutral",
+      "pleasure": ,
+      "arousal": ,
+      "dominance": ,
+    },
+    "motivation": {
+      "long_term": "Look for true love and pursue a happy life.",
+      "short_term": "Come to the human world and experience life.",
+    },
+    "core_self": {
+      "central_belief": ["True love trumps everything, no matter the difference in status or the distance between heaven and man. Put family first, despite the temptations of glory and wealth. Use courage to challenge fate and tradition.",],
+      "features": [
+        "Weaver Girl is one of the seven fairies of the Queen Mother. They often play by the Milky Way (Galaxy), and Weaver Girl is the most beautiful one among them.",
+        "Weaver Girl's main responsibility is to weave beautiful clouds in the Heavenly Palace.",
+        "Although Weaver Girl lived a carefree life in the Heavenly Palace, she was full of curiosity about the human world.",
+        "Although Weaver Girl lives in the Heavenly Palace, deep down in her heart she is full of longing for true love and emotional connection.",
+      ],
+    },
+
+    "relationships": {
+      "Cowherd": {
+        "attitude": "A mixture of shyness, fear and curiosity.",
+        "description": "When Cowherd appeared and returned her clothes, the Weaver Girl felt a renewed sense of curiosity and interest in this bold mortal.",
+        "trust": 2,
+        "intimacy": 4,
+        "supportiveness": 3,
+      }
+    },
+  }
+
+}
+
+
+
+events: [
+  {
+    "When the Weaver Girl finished bathing, she found that her clothes were missing. She was very shy and frightened because she could not return to the Heavenly Palace without clothes.": ['Weaver Girl'], 
+  "The Cowherd happened to pass by and was attracted by the beauty of the Weaver Girl. In order to get close to the Weaver Girl, the Cowherd quietly took away her clothes. When Weaver Girl was a little panicked, Cowherd appeared and took out her clothes.": ['Cowherd'],
+  },
+  {
+    "The Weaver Girl saw that the Cowherd was different from other farmers and wanted him to talk about his experiences in the world. And she also want to share her life in heaven with him.": ['Weaver Girl'],
+    "The Cowherd saw that the Weaver Girl could use magic to make the plow plow the land automatically, and was curious about her magic power and the story in the heaven.": ['Cowherd'],
+  },
+  {
+    "According to heaven's rules, Weaver Girl needs to return to heaven tomorrow, but she is reluctant to leave Cowherd and is wondering whether to leave.": ['Weaver Girl'],
+    "When the Cowherd learned that the Weaver Girl was leaving, he felt very sad and hoped that she would stay.": ['Cowherd'],
+  },
+  {
+    "When the Queen Mother learned that Weaver Girl had violated heaven's rules and married a mortal Cowherd and had children, she ordered the heavenly soldiers to take Weaver Girl away so that they might never see each other again.": ['Weaver Girl', 'Cowherd'],
+  },
+  {
+    "The old cow turned himself into a flying shoe so that the Cowherd could fly into the sky. But the Queen Mother used her hairpin to draw a Milky Way, so the Cowherd and the Weaver Girl could not meet. This love touched many gods. Every year on the seventh day of the seventh lunar month, magpies in the sky would build a bridge so that the Cowherd and the Weaver Girl could meet briefly. This was the first time they met after being separated for a year.": ['Weaver Girl', 'Cowherd'],
+  }
+]
+
+
+
+place_dicts: {"room": {
+"sofa": {},
+"desk": {},
+"dining table": {},
+"bookshelf": {}}}
