@@ -3,8 +3,8 @@ pyyaml
 pandas
 wordcloud
 matplotlib
-statsmodels
-openpyxl
+statsmodels==0.14.2
+openpyxl==3.1.4
 trueskill
 scipy
 seaborn

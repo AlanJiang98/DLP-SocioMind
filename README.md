@@ -1,5 +1,5 @@
 # DLP-SocioMind
-Official Code of SocioMind for CVPR 2024 paper `Digital Life Project: Autonomous 3D Characters with Social Intelligence`.
+Official Code of SocioMind for CVPR 2024 paper *Digital Life Project: Autonomous 3D Characters with Social Intelligence*.
 
 ![Teaser](./figs/pipeline.png)
 
@@ -45,7 +45,7 @@ Default LLM model for SocioMind is ``gpt-4o``, and text model is ``text-embeddin
 ## Experiments
 
 ### AI Society Simulation
-In AI society simulations, we can run only the SocioMind component, which is an LLM-Agent structure based on psychological theories and is associated with the behavior of 3D avatars in the text domain.
+In AI society simulations, we can run only the SocioMind component, which is an LLM-Agent structure based on psychological theories and is associated with the behaviors of 3D avatars in the text domain.
 ```
 python sociomind_ai_society.py 
     --config qiqiang_anxin.yaml 
@@ -64,7 +64,7 @@ Besides, you can refer to each plot for visualization of emotion, keywords, and 
 Config settings are put in ``digital_life_project/characters/configs``.
 Here we introduce some important parameters in the ``XXX.yaml`` files.
 
-- ``mode``: (Options: `preconfigured`, `autonomous`, `event-driven`. Default: autonomous,). `preconfigured`: user can preset the behavior of the two characters in the config yaml. `event-driven`: user can manually set the events of each character in each plot. `autonomous`: plots can be generated autonomously.
+- ``mode``: (Options: `preconfigured`, `autonomous`, `event-driven`. Default: autonomous). `preconfigured`: user can preset the behavior of the two characters in the config yaml. `event-driven`: user can manually set the events of each character in each plot. `autonomous`: plots can be generated autonomously.
 
 - ``characters_info``: A dict about the personality (Big Five Model), emotion (PAD model), motivation, core self, and relationships of each character. For quantitation of the proposed dimension, we use a Likert Scale: 1 ~ 9.
 
@@ -74,7 +74,7 @@ Here we introduce some important parameters in the ``XXX.yaml`` files.
 
 - ``plot_id``: Plot id to start the simulation, espically for replay.
 
-- ``events``: Settings for `event-driven` mode. Events are in a list format. K-th item means the manual events at K-th plot.
+- ``events``: Settings for `event-driven` mode. Events are in a list format. K-th item means the manual events at the K-th plot.
 
 - ``predefined_plots``: Settings for `preconfigured` mode. 
 
