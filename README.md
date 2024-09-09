@@ -10,7 +10,7 @@ Official Code of SocioMind for CVPR 2024 paper *Digital Life Project: Autonomous
     <a href="https://arxiv.org/abs/2312.04547" class="button"><b>[arXiv]</b></a> &nbsp;&nbsp;&nbsp;&nbsp;
     <a href="https://www.youtube.com/watch?v=rj0QEdGbSMs" class="button"><b>[Video]</b></a>
 &nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="https://openxdlab.oss-cn-shanghai.aliyuncs.com/Digital_Life_Project/sociomind_asset.zip" class="button"><b>[Assets]</b></a>
+    <a href="https://drive.google.com/file/d/13q0Hom-H1EN1R2hRIeyaTVL4Wk1i0_zn/view?usp=sharing" class="button"><b>[Assets]</b></a>
 </div>
 
 
@@ -23,7 +23,7 @@ pip install -r requirements.txt
 ```
 
 ### Assets
-Download the required [assets](https://openxdlab.oss-cn-shanghai.aliyuncs.com/Digital_Life_Project/sociomind_asset.zip) of SocioMind and extract them as:
+Download the required [assets](https://drive.google.com/file/d/13q0Hom-H1EN1R2hRIeyaTVL4Wk1i0_zn/view?usp=sharing) of SocioMind and extract them as:
 ```
 -assets
     -sociomind
